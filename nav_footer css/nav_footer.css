@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+footer {
+  width: 1400px;
+  background-color: #505050;
+  margin: 0 auto;
+}
+footer .footer-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 1200px;
+  margin-left: 100px;
+}
+footer .footer-div div {
+  display: inline-block;
+  margin: 30px 0px 10px 0px;
+}
+footer .footer-div div dt {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0px 0px 20px 0px;
+}
+footer .footer-div div dd {
+  color: #9e9b99;
+  margin: 10px 0px 0px 0px;
+}
+footer .footer-div .footer-code {
+  width: 200px;
+  height: 200px;
+  padding: 0px 0px;
+  background: url(../素材/图片/img/code.png) no-repeat 0px 0px;
+  transform: scale(0.75);
+  margin-top: 10px;
+}
+footer .footer-div .footer-logo dl {
+  width: 185px;
+}
+footer .footer-div .footer-friend-link {
+  width: 240px;
+}
+footer .footer-div .footer-friend-link dl {
+  float: left;
+  margin-left: 25px;
+}
+footer .footer-div .footer-friend-link dl:nth-of-type(2) {
+  margin-top: 35px;
+}
+footer .footer-bottom {
+  height: 40px;
+  margin-top: 50px;
+}
+footer .footer-bottom p {
+  color: #9e9b99;
+  text-align: center;
+}

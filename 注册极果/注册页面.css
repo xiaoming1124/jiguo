@@ -79,3 +79,7 @@
   color: #fff;
   margin: 10px;
 }
+footer {
+  margin-top: 0px;
+  position: relative;
+}

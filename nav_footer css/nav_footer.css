@@ -95,11 +95,17 @@ nav{
 }
 .nav_right input{
     width: 150px;
+    height: 25px;
     position: absolute;
     top: 40px;
-    right: 130px;
-    border: none;
+    right: 120px;
+    /* border: none; */
+    border: 1px solid #9e9b99;
+    border-radius: 3px;
     background-color: rgba(255, 255, 255, 0);
+}
+.nav_right input:focus{
+  outline: medium;
 }
 .nav_right .text_ico{
     display: inline-block;

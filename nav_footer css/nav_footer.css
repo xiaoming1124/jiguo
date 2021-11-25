@@ -30,6 +30,14 @@ footer .footer-div div dd {
   color: #9e9b99;
   margin: 10px 0px 0px 0px;
 }
+footer .footer-div div dd a{
+  color: #9e9b99;
+  text-decoration: none;
+}
+footer .footer-div div dd a:hover{
+  color: #9e9b99;
+  text-decoration: none;
+}
 footer .footer-div .footer-code {
   width: 200px;
   height: 200px;

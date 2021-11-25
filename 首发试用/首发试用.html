@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./首发试用.css">
+</head>
+<body>
+    <div class="Starting">
+
+        <!-- 动---画 -->
+        <div class="cartoon">
+            <h1>
+                幻响小贝HiFi2.1音箱
+            </h1>
+            <ul>
+                <li class="plus">126人申请</li>
+                <li>￥599</li>
+                <li class="subtract">20台</li>
+            </ul>
+            <div id="countDown"></div>
+            <button class="applyFor" onclick="sq()">立即申请</button>
+        </div>
+
+    </div>
+</body>
+</html>
+
+<!-- 倒计----------时 -->
+<script>
+    function km(){
+        var nowTime=new Date();
+        var goTime=new Date(2021,11,15);
+        var time=goTime-nowTime;
+        var day=Math.floor(time/1000/60/60/24);
+        var h=Math.floor(time/1000/60/60%24);
+        var m=Math.floor(time/1000/60%60);
+        var s=Math.floor(time/1000%60);
+        var str = '申请时间剩余：'+day+'天'+h+'时'+m+'分'+s+'秒';
+        var div_=document.getElementById('countDown');
+        div_.innerHTML=str;
+    }
+    km();
+    setInterval(km,1000);
+</script>
+
+<!-- 申----------请 -->
+<script>
+    function sq(){
+        var but_=document.getElementsByClassName('applyFor');
+        var plus_=document.getElementsByClassName('plus');
+        var sub_=document.getElementsByClassName('subtract');
+    }
+</script>

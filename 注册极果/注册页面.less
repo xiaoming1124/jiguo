@@ -1,0 +1,86 @@
+.register-div {
+    width: 1400px;
+    height: 750px;
+    background-color: rgb(247, 247, 247);
+    margin: 0 auto;
+    position: relative;
+
+    .register-box {
+        position: absolute;
+        width: 1200px;
+        height: 700px;
+        margin: 25px 100px;
+        background-color: rgb(255,255,255);
+        .register-content{
+            box-sizing: border-box;
+            width: 100%;
+            font-size: 24px;
+            height: 30px;
+            line-height: 30px;
+            border-left: 4px solid rgb(249,80,62);
+            margin-top: 10px;
+        }
+        form{
+            width: 400px;
+            margin: 40px auto ;
+            position: relative;
+            input{
+                box-sizing: border-box;
+                width: 350px;
+                height: 50px;
+                border-radius: 10px;
+                border: none;
+                background-color: rgb(247,247,247);
+                font-size: 20px;
+                margin: 10px;
+            }
+            div:nth-of-type(1){
+                display: inline-block;
+                position: relative;
+                img{
+                    position: absolute;
+                    margin-top: -24px;
+                    margin-left: 10px;
+                }
+            }
+            div:nth-of-type(2){
+                width: 120px;
+                height: 50px;
+                line-height: 48px;
+                text-align: center;
+                display: inline-block;
+                border: 1px solid rgb(165, 161, 161);
+                border-radius: 10px;
+                box-sizing: border-box;
+                font-size: 20px;
+                color: rgb(165, 161, 161);
+                margin-top: 12px;
+                margin-left: 20px;
+                position: absolute;
+                // 鼠标变小手
+                cursor: pointer;
+            }
+            input:focus{
+                outline: none;
+            }
+            input:nth-of-type(2),input:nth-of-type(3){
+                width: 200px;
+            }
+            button{
+                box-sizing: border-box;
+                width: 350px;
+                height: 50px;
+                border-radius: 10px;
+                border: none;
+                background-color: rgb(254,83,65);
+                font-size: 20px;
+                color: #fff;
+                margin: 10px;
+            }
+        }
+    }
+}
+footer{
+    margin-top: 0px;
+    position: relative;
+}

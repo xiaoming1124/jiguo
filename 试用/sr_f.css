@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    /* color: rgba(93, 93, 93, 0.887); */
+}
+
+.try_box{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.try_box p{
+    height: 120px;
+    line-height: 120px;
+    font-size: 40px;
+    font-weight: 500;
+    text-indent: -3.5em;
+    border-top: 1px solid rgba(0, 0, 0, 0.253);
+}
+.t_a{
+    width: 400px;
+    list-style: none;
+    margin: 0px auto;
+    text-align: center;
+    color: rgb(70, 70, 70);
+}
+
+.t_a li{
+    width: 200px;
+    height: 45px;
+    float: left;
+}
+.t_a li:nth-of-type(2) a{
+    color: rgba(240, 27, 8, 0.801) ;
+}
+ .t_a li:nth-of-type(2) {
+    font-size: 22px;
+    border-bottom: 4px solid rgba(240, 27, 8, 0.8);
+    font-weight: 600;
+    color: rgba(240, 27, 8, 0.801) ;
+}
+.t_a a{
+    color: rgba(70, 70, 70, 0.794);
+}
+.t_a li:hover{
+    cursor: pointer;
+}
+.hr{
+    width: 1400px;
+}
+.t_b{
+    width: 800px;
+    list-style: none;
+    margin: 60px auto;
+}
+.t_b li a{
+    color: rgba(70, 70, 70, 0.794);
+}
+.t_b li{
+    width: 200px;
+    height: 45px;
+    float: left;
+    text-align: center;
+}
+
+.t_b li:hover{
+    cursor: pointer;
+}
+.h{
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+    width: 1400px;
+    height: 1800px;
+    /* height: auto; */
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 100px;
+    background-color: rgb(251, 251, 251);
+}
+
+.h li{
+    float: left;
+    width: 250px;
+    height: 300px;
+    background-color: rgb(251, 251, 251);
+    margin-top: 105px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.h img{
+    width: 250px;
+    
+    border-radius: 5px 5px 0 0;
+}
+.h h3{
+    font-size: 18px;
+    text-align: center;
+}
+.h p{
+    font-weight: normal;
+    margin-top: 15px;
+    text-align: center;
+}
+.h span{
+    font-weight: normal;
+    color: rgba(223, 29, 11, 0.801);
+    margin-top: 15px;
+    text-align: center;
+}
+.h button{
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(223, 29, 11, 0.801);
+    border-radius: 5px;
+    color: rgba(223, 29, 11, 0.801);
+    margin-top: 15px;
+}
+.h button:nth-of-type(1){
+    margin-left: 80px;
+}

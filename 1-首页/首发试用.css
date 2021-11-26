@@ -8,7 +8,7 @@
     width: 1400px;
     height: 230px;
     margin: 0 auto;
-    background: url(./original.jpg)no-repeat -250px 0px;
+    background: url(./images/original.jpg)no-repeat -250px 0px;
     background-size: 1700px 230px;
     position: relative;
 }

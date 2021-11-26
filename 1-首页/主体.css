@@ -2,21 +2,22 @@
     margin: 0;
     padding: 0;
 }
-.box{
-    width: 1400px;
-    margin: 0 auto;
-    position: relative;
-}
+
 
 /* 主----------体 */
 .main_{
-    position: absolute;
+    /* position: absolute; */
+    /* height: 200px; */
+    width: 1400px;
+    margin: 0 auto; 
 }
 
 /* 总-----体 */
-.totality{
+.totality1{
     width: 1400px;
-    background-color: aqua;
+    background-color: rgb(247,247,247);
+    /* height: 200px; */
+    /* background-color: rgb(0, 195, 255); */
 }
 
 
@@ -24,7 +25,7 @@
 .titlelen{
     width: 1200px;
     height: 60px;
-    background-color: lavender;
+    /* background-color: lavender; */
     /* position: absolute; */
     margin: 0 auto;
 }
@@ -34,4 +35,209 @@
     font-size: 20px;
     font-weight: bold;
     line-height: 60px;
+    margin-left: 60px;
+}
+
+/* 查看--更多 */
+.rear{
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin-left: 900px;
+    color: rgb(254,83,65);
+    background: url(./images/readMore.png) no-repeat 68px 7px;
+}
+
+/* 报告精选-内容 */
+.frontArticle1{
+    width: 1200px;
+    margin: 0 auto;
+    height: 580px;
+}
+.frontArticle1>ul{
+    margin-left: 60px;
+}
+.frontArticle1 li{
+    list-style: none;
+    width: 220px;
+    height: 250px;
+    float: left;
+    border: 1px solid #e6e9e9;
+    border-radius: 6px;
+    overflow: hidden;
+    /* margin-left: 20px; */
+    margin: 0 60px 30px 0;
+    background: #fff;
+}
+.frontArticle1>ul>li>a{
+    color: #474747;
+    text-decoration: none;
+}
+.totality1 p{
+    font-size: 14px;
+    height: 45px;
+    margin-left: 5px;
+    /* overflow: hidden;
+    word-break: break-all; */
+}
+.front_xia{
+    width: 220px;
+    margin: 10px 0;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #a3a3a3;
+    float: left;
+}
+.front_wen{
+    /* display: block; */
+    float: right;
+}
+.front_wen .zan{
+    padding-left: 20px;
+    box-sizing: border-box;
+    background: url(./images/zan.png) no-repeat 5px 2px;
+}
+.front_wen .reply{
+    padding-left: 20px;
+    box-sizing: border-box;
+    background: url(./images/reply.png) no-repeat 5px 2px;
+}
+
+
+
+/* 导购-----精选 */
+.totality2{
+    background-color: rgb(255,255,255);
+}
+.frontArticle2{
+    width: 1200px;
+    margin: 0 auto;
+    height: 320px;
+}
+.totality2 p{
+    font-size: 14px;
+    height: 45px;
+    margin-left: 5px;
+    /* overflow: hidden;
+    word-break: break-all; */
+}
+.frontArticle2 li{
+    list-style: none;
+    width: 220px;
+    height: 260px;
+    float: left;
+    border: 1px solid #e6e9e9;
+    border-radius: 6px;
+    overflow: hidden;
+    /* margin-left: 20px; */
+    margin: 0 60px 30px 0;
+    background: #fff;
+    border-bottom: none;
+}
+.frontArticle2>ul>li>a{
+    color: #474747;
+    text-decoration: none;
+}
+.frontArticle2>ul{
+    margin-left: 60px;
+}
+/* .frontArticle2 .front_wen:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+} */
+
+.front_xia2{
+    width: 220px;
+    height: 60px;
+    margin: 10px 0;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #a3a3a3;
+    float: left;    
+    /* background-color: hotpink; */
+    vertical-align: baseline;
+    background: url(./images/listbg.jpg) no-repeat 0px 35px;
+    background-size: 221px 19px;
+}
+
+
+/* 发现-----酷玩 */
+.totality3{
+    width: 1400px;
+    background-color: rgb(247,247,247);
+}
+.frontArticle3{
+    width: 1200px;
+    margin: 0 auto;
+    height: 950px;
+}
+.totality3 p{
+    font-size: 15px;
+    height: 45px;
+    margin-left: 5px;
+    /* overflow: hidden;
+    word-break: break-all; */
+}
+.frontArticle3 a p span{
+    color: #a3a3a3;
+    font-size: 12px;
+}
+.frontArticle3 li{
+    list-style: none;
+    width: 220px;
+    height: 260px;
+    float: left;
+    border: 1px solid #e6e9e9;
+    border-radius: 6px;
+    overflow: hidden;
+    /* margin-left: 20px; */
+    margin: 0 60px 30px 0;
+    background: #fff;
+    /* border-bottom: none; */
+}
+.frontArticle3>ul>li>a{
+    color: #474747;
+    text-decoration: none;
+}
+.frontArticle3>ul{
+    margin-left: 60px;
+}
+
+.front_xia3 .name2{
+    color: #fe5341;
+}
+.front_xia3{
+    margin-top: 15px;
+    padding: 0 5px;
+    color: #a3a3a3;
+}
+.front_wen{
+    font-size: 12px;
+}
+
+
+/* 点击加载更多 */
+.upload{
+    background-color: rgb(247,247,247);
+    height: 80px;
+    width: 1400px;
+    text-align: center;
+    line-height: 100px;
+}
+.upload span{
+    padding-left: 25px;
+    box-sizing: border-box;
+    color: #fe5341;
+    display: block;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    /* border: 1px solid rebeccapurple; */
+    background: url(./images/more.png) no-repeat 10px 12px;
+
 }

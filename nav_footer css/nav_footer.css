@@ -3,18 +3,18 @@
   padding: 0;
 }
 
-.box{
+/* .box{
   position: relative;
   margin: 0 auto; 
   width: 1400px;
-}
+} */
 
 footer {
   width: 1400px;
   background-color: #505050;
   margin: 0 auto;
-  position: absolute;
-  margin-top: 500px;
+  /* position: absolute; */
+  /* margin-top: 500px; */
 }
 
 footer .footer-div {

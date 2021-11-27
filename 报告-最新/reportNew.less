@@ -1,0 +1,278 @@
+.hot-report {
+    width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(247, 247, 247);
+
+    .hot-report-title {
+        background-color: #fff;
+
+        .hot-report-title-big {
+            font-size: 40px;
+            // 文本缩进
+            text-indent: -3.5em;
+            height: 70px;
+            line-height: 70px;
+            margin-bottom: 30px;
+        }
+
+        .hot-report-title-small {
+            width: 1400px;
+            height: auto;
+            margin: 0 auto;
+            text-align: center;
+
+            div {
+                box-sizing: border-box;
+                display: inline-block;
+                color: rgb(154, 153, 147);
+                font-size: 22px;
+                width: 200px;
+                height: 50px;
+                line-height: 45px;
+            }
+
+            .hot-report-title-onclick {
+                color: rgb(250, 84, 50);
+                border-bottom: 5px solid rgb(250, 84, 50);
+            }
+        }
+    }
+
+    .hot-report-content {
+        width: 1200px;
+        height: auto;
+        margin-left: 120px;
+        position: relative;
+
+        .hot-report-content-left {
+            width: 800px;
+            height: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-direction: column;
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                color: rgb(41, 41, 41);
+
+                .hot-report-background {
+                    width: 800px;
+                    height: 450px;
+                    margin-top: 20px;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    background-repeat: no-repeat !important;
+                    background-size: cover!important;
+
+                    .tips {
+                        height: 30%;
+                        background-color: #fff;
+                        opacity: .8;
+
+                        p {
+                            margin: 20px 0px;
+                            font-size: 22px;
+                            color: rgba(56, 56, 56);
+                        }
+
+                        .susu-comment {
+                            width: 100%;
+                            height: 50px;
+                            line-height: 50px;
+                            margin-top: 10px;
+                            // background-color: rgb(108, 110, 110);
+                            position: relative;
+
+                            div {
+                                display: inline-block;
+                            }
+
+                            .man-photo {
+                                position: absolute;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                margin: 10px 10px 0px 10px;
+                                background: url(../素材/图片/css/img/tx.jpg);
+                            }
+
+                            .man-name {
+                                position: absolute;
+                                width: 100px;
+                                height: 30px;
+                                line-height: 30px;
+                                color: rgb(250, 84, 50);
+                                margin: 10px 0px 0px 50px;
+                            }
+
+                            .comment-time {
+                                position: absolute;
+                                width: 100px;
+                                height: 30px;
+                                line-height: 30px;
+                                color: rgb(172, 174, 177);
+                                margin: 10px 0px 0px 100px;
+                            }
+
+                            .comment-good {
+                                position: absolute;
+                                box-sizing: border-box;
+                                width: 15px;
+                                height: 15px;
+                                line-height: 15px;
+                                color: rgb(172, 174, 177);
+                                background: url(../素材/图片/css/img/use5.png) round 0px 0px;
+                                padding-left: 16px;
+                                margin: 15px 0px 0px 700px;
+                            }
+
+                            .comment-message {
+                                position: absolute;
+                                box-sizing: border-box;
+                                width: 20px;
+                                height: 15px;
+                                line-height: 15px;
+                                color: rgb(172, 174, 177);
+                                background: url(../素材/图片/css/img/reply.png) no-repeat 0px 2px;
+                                padding-left: 16px;
+                                margin: 15px 0px 0px 745px;
+                            }
+                        }
+                    }
+                }
+
+                .hot-report-background1 {
+                    background: url(../素材/图片/img/bg1.jpg) round;
+                }
+
+                .hot-report-background2 {
+                    background: url(../素材/图片/img/bg2.jpg) round;
+                }
+
+                .hot-report-background3 {
+                    background: url(../素材/图片/img/bg3.jpg) round;
+                }
+
+                .hot-report-background4 {
+                    background: url(../素材/图片/img/bg4.jpg) round;
+                }
+
+                .hot-report-background5 {
+                    background: url(../素材/图片/img/bg5.jpg) round;
+                }
+            }
+
+            .find-more {
+                .find-more-box {
+                    width: 200px;
+                    height: 50px;
+                    line-height: 50px;
+                    margin: 20px auto;
+                    background-color: rgb(247, 247, 247);
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                    justify-content: center;
+
+                    div,
+                    img {
+                        display: inline-block;
+                    }
+
+                    img {
+                        margin-top: 20px;
+                        width: 16px;
+                        height: 8px;
+                    }
+
+                    div {
+                        width: 150px;
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 20px;
+                        color: rgb(250, 84, 50);
+                    }
+                }
+
+                .find-more-box:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .hot-report-content-right {
+            position: absolute;
+            width: 300px;
+            height: auto;
+            display: inline-block;
+            margin: 20px 0px 0px 20px;
+
+            .hot-report-content-right-userman {
+                width: 300px;
+                height: auto;
+
+                div {
+                    margin: 15px 0px;
+                }
+
+                .hot-report-content-right-userman-title {
+                    box-sizing: border-box;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 24px;
+                    border-left: 4px solid rgb(250, 84, 50);
+                    padding-left: 10px;
+                    margin-top: 0px;
+                }
+
+                .hot-report-content-right-userman-picture {
+                    width: 300px;
+                    height: 170px;
+                    background: url(../素材/图片/img/tiyanImg.jpg) round;
+                }
+
+                .hot-report-content-right-userman-content-title {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                .hot-report-content-right-userman-content-message {
+                    width: 305px;
+
+                    p {
+                        margin: 10px 0;
+                    }
+                }
+            }
+
+            .hot-report-content-right-about {
+                width: 300px;
+                height: auto;
+                margin-top: 20px;
+
+                .hot-report-content-right-about-title {
+                    box-sizing: border-box;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 24px;
+                    border-left: 4px solid rgb(250, 84, 50);
+                    padding-left: 10px;
+                }
+
+                .hot-report-content-right-about-picture {
+                    width: 300px;
+                    height: 135px;
+                    margin-top: 30px;
+                    background: url(../素材/图片/img/myCode.jpg) round;
+                }
+            }
+        }
+    }
+}

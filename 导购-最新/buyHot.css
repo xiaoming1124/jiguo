@@ -1,0 +1,148 @@
+.hot-report {
+  width: 1400px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+}
+.hot-report .hot-report-title {
+  background-color: #fff;
+}
+.hot-report .hot-report-title .hot-report-title-big {
+  font-size: 40px;
+  text-indent: -3.5em;
+  height: 70px;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+.hot-report .hot-report-title .hot-report-title-small {
+  width: 1400px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+.hot-report .hot-report-title .hot-report-title-small div {
+  box-sizing: border-box;
+  display: inline-block;
+  color: #9a9993;
+  font-size: 22px;
+  width: 200px;
+  height: 50px;
+  line-height: 45px;
+}
+.hot-report .hot-report-title .hot-report-title-small .hot-report-title-onclick {
+  color: #fa5432;
+  border-bottom: 5px solid #fa5432;
+}
+.hot-report .hot-report-content {
+  width: 1200px;
+  height: auto;
+  margin-left: 120px;
+  position: relative;
+}
+.hot-report .hot-report-content .hot-buy {
+  width: 1200px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.hot-report .hot-report-content .hot-buy a {
+  text-decoration: none;
+  color: #292929;
+}
+.hot-report .hot-report-content .hot-buy a .hot-buy-box {
+  width: 270px;
+  height: auto;
+  margin: 20px 0px;
+  list-style: none;
+  display: inline-block;
+}
+.hot-report .hot-report-content .hot-buy a .hot-buy-box img {
+  width: 100%;
+  height: 155px;
+}
+.hot-report .hot-report-content .hot-buy a .hot-buy-box .hot-buy-box-content {
+  background-color: #fff;
+  height: 80px;
+}
+.hot-report .hot-report-content .hot-buy a .hot-buy-box .hot-buy-box-content .hot-buy-box-content1 {
+  height: 40px;
+  margin-bottom: 20px;
+}
+.hot-report .hot-report-content .hot-buy a .hot-buy-box .hot-buy-box-content .hot-buy-box-content2 {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: flex-end;
+}
+.hot-report .hot-report-content .hot-buy a .hot-buy-box .hot-buy-box-content .hot-buy-box-content2 .hot-buy-box-content2-like {
+  box-sizing: border-box;
+  width: 40px;
+  height: 15px;
+  line-height: 15px;
+  color: #acaeb1;
+  background: url(../素材/图片/css/img/xin.png) no-repeat 0px 0px;
+  padding-left: 16px;
+}
+.hot-report .hot-report-content .hot-buy a .hot-buy-box .hot-buy-box-content .hot-buy-box-content2 .hot-buy-box-content2-message {
+  box-sizing: border-box;
+  width: 40px;
+  height: 15px;
+  line-height: 15px;
+  color: #acaeb1;
+  background: url(../素材/图片/css/img/reply.png) no-repeat 0px 2px;
+  padding-left: 16px;
+}
+.hot-report .hot-report-content .hot-buy a:hover {
+  opacity: 0.8;
+}
+.hot-report .hot-report-content .find-more {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.hot-report .hot-report-content .find-more .find-more-box {
+  width: 1200px;
+  height: 50px;
+  line-height: 50px;
+  margin: 20px auto;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: center;
+}
+.hot-report .hot-report-content .find-more .find-more-box div,
+.hot-report .hot-report-content .find-more .find-more-box img {
+  display: inline-block;
+}
+.hot-report .hot-report-content .find-more .find-more-box img {
+  margin-top: 20px;
+  width: 16px;
+  height: 8px;
+}
+.hot-report .hot-report-content .find-more .find-more-box div {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  color: #fa5432;
+}
+.hot-report .hot-report-content .find-more .find-more-box:hover {
+  cursor: pointer;
+}

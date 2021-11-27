@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../nav_footer css/nav_footer.css">
+    <link rel="stylesheet" href="./zuixin.css">
+</head>
+<body>
+    <!-- nav 导航栏 -->
+    <nav>
+        <ul class="nav_left">
+            <li><a href=""><img src="../素材/图片/img/logonew.png" alt=""></a></li>
+            <li><a href="">首页</a></li>
+            <li><a href="">酷玩</a></li>
+            <li><a href="">导购</a></li>
+            <li><a href="">试用</a></li>
+            <li><a href="">报告</a></li>
+        </ul>
+        <div class="nav_right">
+            <input type="text">
+            <!-- <img src="../jiguo/素材/图片/css/img/search.png" alt=""> -->
+            <a href=""><div class="text_ico"></div></a>
+            <a href=""> <button>注册</button></a> 
+        </div>
+    </nav>
+
+    <!-- 发现---酷玩 -->
+    <div class="Coldplay">
+        <p>发现酷玩</p>
+        <ul class="t_a">
+            <li class="zui zuixin"><a href="./发现酷玩.html">最新</a></li>
+            <li class="zui"><a href="./最热.html">最热</a></li>
+            <li>品类</li>
+        </ul>
+    </div>
+
+    <!-- 渲------染 -->
+
+        <ul class="xuanran">
+            <li>
+                    <img src="./images/k1.jpg" alt="" width="240" height="150">
+                    <p>
+                        SCiO 微型光谱仪<br>
+                        <span>可以测定食物成分及营养</span>
+                    </p>
+                    <div class="front_xia3">
+                        <span class="name2">￥ 1212</span>
+                        <div class="front_wen">
+                            <span class="zan">3</span>
+                            <span class="reply">3</span>
+                        </div>
+                    </div>
+            </li>
+        </ul>
+ 
+
+
+    <!-- footer 脚注部分 -->
+    <footer>
+        <div class="footer-div">
+            <div class="footer-code"></div>
+            <div class="footer-logo">
+                <dl>
+                    <dt><img src="../素材/图片/img/logoImg.jpg" alt=""></dt>
+                    <dd>全球酷玩试用导购平台酷·新奇好玩品质</dd>
+                    <dd>微信添加“JguoJguo”获取我们的服务。</dd>
+                </dl>
+            </div>
+            <div class="footer-free">
+                <dl>
+                    <dt>免费试用</dt>
+                    <dd><a href="">试用流程</a></dd>
+                    <dd><a href="">如何提高成功率</a></dd>
+                </dl>
+            </div>
+            <div class="footer-friend-link">
+                <dl>
+                    <dt>友情链接</dt>
+                    <dd><a href="#">搜狐IT</a></dd>
+                    <dd><a href="#">搜狐数码</a></dd>
+                    <dd><a href="#">凤凰数码</a></dd>
+                    <dd><a href="#">泡泡网</a></dd>
+                    <dd><a href="#">ZUK社区</a></dd>
+                    <dd><a href="#">极客公园</a></dd>
+                    <dd><a href="#">果库</a></dd>
+                </dl>
+                <dl>
+                    <dd><a href="#">WEIBUSI</a></dd>
+                    <dd><a href="#">腾讯科技</a></dd>
+                    <dd><a href="#">凤凰科技</a></dd>
+                    <dd><a href="#">PConline</a></dd>
+                    <dd><a href="#">3W咖啡</a></dd>
+                    <dd><a href="#">亿觅emie</a></dd>
+                    <dd><a href="#">易迅易启玩</a></dd>
+                </dl>
+            </div>
+            <div class="footer-how-buy">
+                <dl>
+                    <dt>购买攻略</dt>
+                    <dd><a href="#">美亚海淘教程</a></dd>
+                    <dd><a href="#">日亚海淘教程</a></dd>
+                    <dd><a href="#">海淘转运攻略</a></dd>
+                    <dd><a href="#">kickstarter 众筹购买玫略</a></dd>
+                    <dd><a href="#">indiegogo 众筹购买攻略</a></dd>
+                </dl>
+            </div>
+            <div class="footer-cooperation">
+                <dl>
+                    <dt>厂商合作</dt>
+                    <dd><a href="#">关于极果</a></dd>
+                    <dd><a href="#">联系我们</a></dd>
+                    <dd><a href="mailto:BD@jiguo.com">商务合作：BD@jiguo.com</a></dd>
+					<dd><a href="mailto:CEO@jiguo.com">CEO邮箱：CEO@jiguo.com</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2016极果版权所有</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script src="./doT.min.js"></script>
+<!-- <script src="./jquery.min.js"></script> -->
+<script>
+    var ajax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
+    ajax.open('get', './酷玩-最新.json', true);
+    ajax.send();
+    ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4) {
+            if (ajax.status == 200) {
+                var data = JSON.parse(ajax.responseText);
+                var tempText = doT.template(document.getElementById('temp_id').innerHTML);
+                document.getElementsByClassName('xuanran')[0].innerHTML = tempText(data);;
+                // document.getElementsByClassName('h')[0].innerHTML = data;
+            }
+        }
+    }
+</script>
+<script id="temp_id" type="text/x-dot-template">
+    {{~it:value:zuixin}}
+    <li>
+        <img src="{{=value.img}}" alt="">
+        <p>{{=value.text}}<span>{{=value.description}}</span></p>
+        <div class="front_xia3">
+            <span class="name2">{{=value.price}}</span>
+            <div class="front_wen">
+                <span class="zan">{{=value.like}}</span>
+                <span class="reply">{{=value.words}}</span>
+            </div>
+        </div>  
+    </li>
+    {{~}}
+</script>
+
+<script>
+    var li_=document.getElementsByClassName('zui');
+    console.log(li_);
+    li_[0].onclick = function () {
+    li_[1].style.borderBottom = '';
+    li_[1].style.color = '';
+    this.style.borderBottom = 'solid 4px #fe5431';
+    this.style.color = '#fe5431';
+}
+</script>

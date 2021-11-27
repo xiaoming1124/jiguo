@@ -1,0 +1,170 @@
+.hot-report {
+    width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(247, 247, 247);
+
+    .hot-report-title {
+        background-color: #fff;
+
+        .hot-report-title-big {
+            font-size: 40px;
+            // 文本缩进
+            text-indent: -3.5em;
+            height: 70px;
+            line-height: 70px;
+            margin-bottom: 30px;
+        }
+
+        .hot-report-title-small {
+            width: 1400px;
+            height: auto;
+            margin: 0 auto;
+            text-align: center;
+
+            div {
+                box-sizing: border-box;
+                display: inline-block;
+                color: rgb(154, 153, 147);
+                font-size: 22px;
+                width: 200px;
+                height: 50px;
+                line-height: 45px;
+            }
+
+            .hot-report-title-onclick {
+                color: rgb(250, 84, 50);
+                border-bottom: 5px solid rgb(250, 84, 50);
+            }
+        }
+    }
+
+    .hot-report-content {
+        width: 1200px;
+        height: auto;
+        margin-left: 120px;
+        position: relative;
+
+        .hot-buy {
+            width: 1200px;
+            height: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+
+            a {
+                text-decoration: none;
+                color: rgb(41, 41, 41);
+
+                .hot-buy-box {
+                    width: 270px;
+                    height: auto;
+                    margin: 20px 0px;
+                    list-style: none;
+                    display: inline-block;
+
+                    img {
+                        width: 100%;
+                        height: 155px;
+                    }
+
+                    .hot-buy-box-content {
+                        background-color: #fff;
+                        height: 80px;
+
+                        .hot-buy-box-content1 {
+                            height: 40px;
+                            margin-bottom: 20px;
+                        }
+
+                        .hot-buy-box-content2 {
+                            height: 40px;
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            flex-wrap: wrap;
+                            -webkit-box-pack: justify;
+                            -ms-flex-pack: justify;
+                            justify-content: flex-end;
+
+                            .hot-buy-box-content2-like {
+                                box-sizing: border-box;
+                                width: 40px;
+                                height: 15px;
+                                line-height: 15px;
+                                color: rgb(172, 174, 177);
+                                background: url(../素材/图片/css/img/xin.png) no-repeat 0px 0px;
+                                padding-left: 16px;
+                            }
+
+                            .hot-buy-box-content2-message {
+                                box-sizing: border-box;
+                                width: 40px;
+                                height: 15px;
+                                line-height: 15px;
+                                color: rgb(172, 174, 177);
+                                background: url(../素材/图片/css/img/reply.png) no-repeat 0px 2px;
+                                padding-left: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+            a:hover{
+                opacity: .8;
+            }
+        }
+
+        .find-more {
+            list-style: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+
+            .find-more-box {
+                width: 1200px;
+                height: 50px;
+                line-height: 50px;
+                margin: 20px auto;
+                background-color: rgb(247, 247, 247);
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: center;
+
+                div,
+                img {
+                    display: inline-block;
+                }
+
+                img {
+                    margin-top: 20px;
+                    width: 16px;
+                    height: 8px;
+                }
+
+                div {
+                    width: 150px;
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 20px;
+                    color: rgb(250, 84, 50);
+                }
+            }
+
+            .find-more-box:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
